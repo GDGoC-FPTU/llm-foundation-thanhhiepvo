@@ -26,10 +26,10 @@ Bạn sẽ thấy output so sánh phản hồi của GPT-4o và GPT-4o-mini.
 Gọi `call_openai` với các giá trị temperature 0.0, 0.5, 1.0 và 1.5 sử dụng prompt **"Hãy kể cho tôi một sự thật thú vị về Việt Nam."**
 
 **Bạn nhận thấy quy luật gì qua bốn phản hồi?** (2–3 câu)
-> *Câu trả lời của bạn*
+> Temperature càng cao thì câu trả lời càng đa dạng, ngược lại càng thấp thì câu trả lời sẽ nhất quán hơn
 
 **Bạn sẽ đặt temperature bao nhiêu cho chatbot hỗ trợ khách hàng, và tại sao?**
-> *Câu trả lời của bạn*
+> Tầm 0.3 để mỗi lần khách hàng hỏi thì câu trả lời không quá cứng nhắc nhưng cũng không được quá sai lệch
 
 ---
 
@@ -37,16 +37,16 @@ Gọi `call_openai` với các giá trị temperature 0.0, 0.5, 1.0 và 1.5 sử
 Xem xét kịch bản: 10.000 người dùng hoạt động mỗi ngày, mỗi người thực hiện 3 lần gọi API, mỗi lần trung bình ~350 token.
 
 **Ước tính xem GPT-4o đắt hơn GPT-4o-mini bao nhiêu lần cho workload này:**
-> *Câu trả lời của bạn*
+> khoảng 33 lần
 
 **Mô tả một trường hợp mà chi phí cao hơn của GPT-4o là xứng đáng, và một trường hợp GPT-4o-mini là lựa chọn tốt hơn:**
-> *Câu trả lời của bạn*
+> Dùng GPT-4o khi cần chất lượng và độ chính xác cao hơn, và GPT-4o-mini khi cần phục vụ lượng lớn người dùng với chi phí thấp
 
 ---
 
 ### Bài tập 2.3 — Trải Nghiệm Người Dùng với Streaming
 **Streaming quan trọng nhất trong trường hợp nào, và khi nào thì non-streaming lại phù hợp hơn?** (1 đoạn văn)
-> *Câu trả lời của bạn*
+> Người dùng tương tác theo realtime, như chatbot hội thoại, trợ lý trực tuyến. Hay khi muốn giảm cảm giác chờ đợi dài bằng các hiển thị câu trả lời từng phần hoặc Khi phản hồi dài và cần trải nghiệm mượt mà, giúp người dùng thấp tiến trình đang hoạt động.
 
 
 ## Danh Sách Kiểm Tra Nộp Bài
